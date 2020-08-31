@@ -1,0 +1,15 @@
+{
+  "name": "default",
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "",
+  "database": "blog-nest",
+  "entities": ["./src/modules/**/entities/*.ts"],
+  "migrations": ["./src/shared/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/shared/migrations",
+    "entitiesDir": "./src/modules"
+  }
+}
